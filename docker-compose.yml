@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  house-price-api:
+    build: .
+    container_name: house-price-api
+    ports:
+      - "8000:8000"
+    restart: always
