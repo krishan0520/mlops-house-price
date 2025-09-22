@@ -1,7 +1,6 @@
 venv/
 __pycache__/
 .ipynb_checkpoints/
-models/
 data/
-*.pkl
-*.h5
+random_forest_model.pkl
+
