@@ -45,7 +45,7 @@ jobs:
       - name: Build, Tag, and Push Docker image
         run: |
           IMAGE_TAG=latest
-          ECR_URI=${{ steps.login-ecr.outputs.registry }}/${{ secrets.ECR_REPOSITORY }}:$IMAGE_TAG
+          ECR_URI=412622496898.dkr.ecr.us-east-1.amazonaws.com/mlops-house-price:$IMAGE_TAG
           echo "Building image: $ECR_URI"
           docker build -t $ECR_URI .
           docker push $ECR_URI
