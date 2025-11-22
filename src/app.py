@@ -15,7 +15,7 @@ def home():
 
 
 @app.post("/predict")
-def pridict(data:dict):
+def predict(data:dict):
     #covert input data to dataframe
     df = pd.DataFrame([data])
     prediction = model.predict(df)
